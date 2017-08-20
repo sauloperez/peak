@@ -1,37 +1,48 @@
 /* This file is for your main application css. */
 $fa-font-path: "../fonts";
-@import "font-awesome";
-@import "bootstrap";
+// @import "font-awesome";
+// @import "bootstrap";
 
 html {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4rem;
-  color: #636779;
 }
 
 body {
+  color: #676767;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5rem;
 }
 
 h2 {
-  color: #383B49;
-  padding-top: 1.7rem;
-  margin-top: 0;
+  color: #29292c; //#383B49;
   font-size: 2.05rem;
 }
 
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.05rem;
-    line-height: 2.1rem; }
-  h3 {
-    font-size: 1.1rem; }
-  body {
-    font-weight: 300; }
+.container {
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.box {
+  border: 2px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.alert:empty {
+  display: none;
 }
 
 thead td {
   text-transform: uppercase;
+  color: #999;
   font-weight: normal;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 8px;
 }

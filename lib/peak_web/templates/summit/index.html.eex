@@ -1,20 +1,22 @@
 <h2>Summits</h2>
 <div>
-  <table class="list">
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Height</td>
-        <td>Status</td>
-      </tr>
-    </thead>
-    <tbody>
-      <%= for summit <- @summits do %>
+  <section class="box">
+    <table class="list">
+      <thead>
         <tr>
-          <td><a href=""><%= summit.name %></a></td>
-          <td><%= summit.height %></td>
+          <td>Name</td>
+          <td>Height</td>
+          <td>Status</td>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <%= for summit <- @summits do %>
+          <tr>
+            <td><a href=""><%= summit.name %></a></td>
+            <td><%= summit.height %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </section>
 </div>
