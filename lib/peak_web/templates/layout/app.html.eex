@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Peak</title>
+    <title><%= title() %></title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   </head>
@@ -16,7 +16,13 @@
     <div class="container">
       <header class="header">
         <nav role="navigation">
+          <div class="logo-wrapper">
+            <a href=""><h1>Peak</h1></a>
+          </div>
           <ul class="nav nav-pills pull-right">
+            <li class="nav-item">
+              <%= link "Summits", to: summit_path(@conn, :index), class: active_class(@conn, summit_path(@conn, :index)) %>
+            </li>
           </ul>
         </nav>
         <span class="logo"></span>
