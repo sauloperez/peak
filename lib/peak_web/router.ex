@@ -16,7 +16,7 @@ defmodule PeakWeb.Router do
   scope "/", PeakWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", SummitController, :index
     resources "/summits", SummitController
   end
 
