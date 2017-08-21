@@ -7,6 +7,7 @@ defmodule Peak.Summit do
   schema "summits" do
     field :height, :integer
     field :name, :string
+    belongs_to :mountain_range, Peak.MountainRange
 
     timestamps()
   end

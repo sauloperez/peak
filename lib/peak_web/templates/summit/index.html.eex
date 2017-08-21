@@ -6,7 +6,7 @@
         <tr>
           <td>Name</td>
           <td>Height</td>
-          <td>Status</td>
+          <td>Mountain range</td>
         </tr>
       </thead>
       <tbody>
@@ -14,6 +14,7 @@
           <tr>
             <td><a href=""><%= summit.name %></a></td>
             <td><%= summit.height %></td>
+            <td><%= summit.mountain_range.name %></td>
           </tr>
         <% end %>
       </tbody>
